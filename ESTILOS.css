@@ -1,0 +1,1007 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* LOG IN CSS **************************************************************************/
+#LogInBody {
+  background-color: #30308e;
+}
+
+.form {
+  max-width: 650px;
+  min-width: 316px;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 7% auto 7% auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+#logoInicio {
+  width: 150px;
+  height: auto;
+  margin-top: 18px;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+
+.contenedor {
+  justify-content: center;
+  margin: 0px 55px 30px 55px;
+}
+
+.grupo {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.grupo label {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.grupo input {
+  display: block;
+  height: 2em;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #30308e;
+  background-color: #f1eaff;
+  padding: 5px;
+}
+
+#mensaje {
+  font-size: 1em;
+  color: red;
+  text-align: center;
+}
+
+#btn-aceptar {
+  width: 190px;
+  height: 31px;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #30308e;
+  border: 0;
+  color: white;
+}
+
+#btn-aceptar:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
+#btn-aceptar:not(:hover) {
+  font-weight: lighter;
+  transition: all 0.2s;
+}
+
+.form a {
+  display: block;
+  bottom: 0;
+  text-align: right;
+  margin-top: 36px;
+  padding-bottom: 7px;
+  font-size: 1em;
+  margin-right: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+.form a:hover {
+  color: #1d24ca;
+  text-decoration: underline;
+}
+
+/* VER INFORMACION DE CAMIONES, VER INFORMACION DE VIAJES CSS ***************************************************************************/
+.seccion_filtros {
+  vertical-align: middle;
+}
+
+.seccion_filtros a {
+  margin: 0;
+  padding: 0px;
+  width: auto;
+}
+
+#btn_add {
+  padding: 2.5px 6px;
+  background-color: #6c22a6;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+#btn_add:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.contenedor_botones a {
+  text-decoration: none;
+}
+
+@media (width > 895px) {
+  .seccion_filtros a {
+    margin-left: 90px;
+  }
+}
+
+@media (width < 895px) {
+  main {
+    display: block;
+    min-width: 450px;
+  }
+  .seccion_filtros {
+    flex-direction: column;
+    /* align-items: flex-start; */
+    align-items: center;
+  }
+  #btn_add {
+    margin-left: 0px;
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .filtro {
+    width: 70%;
+    text-align: center;
+  }
+
+  /* (viajes) css *****************/
+
+  .filtro1 {
+    display: block;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .filtro1 input {
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 2px;
+  }
+
+  .filtro1 label,
+  input,
+  select {
+    display: block;
+  }
+
+  .filtro label {
+    font-size: 20px;
+  }
+
+  #selectViaje {
+    width: 95%;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .filtro1 input {
+    width: 95%;
+    font-size: 20px;
+    background-color: white;
+  }
+
+  .filtro select {
+    display: block;
+    padding: 1.5%;
+    font-size: 20px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  main {
+    font-size: 20px;
+  }
+}
+
+main {
+  min-width: 450px;
+}
+
+.seccion_filtros {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 1.5%;
+  margin-top: 25px;
+  min-width: 450px;
+}
+
+.filtro {
+  margin: 0;
+  padding: 0;
+}
+
+.filtro select {
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  border: 0;
+  padding: 2px;
+}
+
+.seccion_tabla {
+  width: 100%;
+  margin-top: 30px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.seccion_tabla1 {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 90%;
+  overflow-x: scroll;
+}
+
+#btnadd_vehiculo {
+  padding: 2.5px 6px;
+  background-color: #6c22a6;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+#tabla_vehiculos {
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#tabla_vehiculos td {
+  padding: 0px 7px 0px 7px;
+}
+
+.tablaTitulo {
+  border: 2px solid #e1e1e3;
+  background-color: #e1e1e3;
+  height: 50px;
+}
+
+#tabla_vehiculos tbody tr {
+  border-right: 2px solid #e1e1e3;
+  border-left: 2px solid #e1e1e3;
+  border-bottom: 2px solid #e1e1e3;
+}
+
+.tablaTitulo {
+  width: 100%;
+}
+
+#tabla_vehiculos button {
+  border: 0;
+  background-color: transparent;
+}
+
+#tabla_vehiculos button:hover {
+  background-color: #6c22a6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#tabla_vehiculos button:hover i {
+  color: white;
+}
+
+#tabla_vehiculos i {
+  font-size: 1.5em;
+}
+
+.contenedor_botones {
+  min-width: 15%;
+}
+
+/* ver viaje css */
+.verviaje label {
+  text-align: center;
+}
+
+/* TABLA RESPONSIVA */
+
+@media (max-width: 650px) {
+  #tabla_vehiculos {
+    width: 80%;
+    margin: auto;
+  }
+
+  #tabla_vehiculos th {
+    display: none;
+  }
+
+  #tabla_vehiculos tr {
+    margin: auto;
+  }
+
+  #tabla_vehiculos td {
+    display: block;
+  }
+
+  #tabla_vehiculos .dato::before {
+    content: attr(data-cell) ": ";
+    font-weight: bold;
+  }
+
+  .contenedor_botones {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* AGREGAR CAMIONES CSS **************************************************/
+#VistasForm {
+  background-color: #a9a9a9;
+  margin: 0;
+}
+
+/* CONTENEDOR DE FORM PARA AGREGAR VEHICULO */
+.editar_camion {
+  /* height: 45%; */
+  height: 42%;
+  /* min-height: 350px; */
+  min-height: 350px;
+  width: 40%;
+  max-width: 40%;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.agregar_camion {
+  height: 85%;
+  min-height: 600px;
+  width: 40%;
+  max-width: 40%;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+/* FORM AGREGAR VEHICULO (DATOS) */
+.form_add {
+  height: 100%;
+  margin: 5%;
+  padding-top: 4%;
+  /* padding-top: 1%; */
+}
+
+/* FORM VIAJE GASTOS */
+.form_addGasto {
+  height: 100%;
+  /* margin: 5%; */
+  margin: 1% 5% 0% 5%;
+  padding-top: 2%;
+}
+
+.form_edit {
+  padding-top: 1%;
+  margin: 1% 5% 0% 5%;
+}
+
+/* TITULOS DEL FORM */
+.form_add label {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.form_addGasto label {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.form_add .titulo {
+  font-weight: bold;
+}
+
+.form_addGasto .titulo {
+  font-weight: bold;
+}
+
+/* CAMPOS DE ENTRADA DEL FORM */
+.form_add input {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  height: 20%;
+  font-size: 17px;
+  padding: 1%;
+  text-align: center;
+  background-color: white;
+}
+
+.form_addGasto input {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  height: 20%;
+  font-size: 17px;
+  padding: 1%;
+  text-align: center;
+  background-color: white;
+}
+
+.form_add select {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 1.5%;
+  background-color: white;
+}
+
+.form_addGasto select {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 1.5%;
+  background-color: white;
+}
+
+/* CAMPOS PARA EXCEPCIONES */
+/* .form_add .excepcion {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+} */
+
+.excepcion {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* CONTENEDOR DE CADA CAMPO DEL FORM (DIV) */
+.form_add div {
+  margin-bottom: 27px;
+}
+
+.form_addGasto div {
+  margin-bottom: 27px;
+}
+
+/* CONTENEDOR DE BOTONES (AGREGAR Y CANCELAR) */
+.botones_AgregarVehiculo {
+  width: 70%;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.botones_AgregarGasto {
+  width: 70%;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 1%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+/* BOTONES */
+.botones_AgregarVehiculo input {
+  width: 39%;
+  max-width: 39%;
+  padding: 1.5%;
+  /* background-color: #6c22a6; */
+  background-color: #756ab6;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.botones_AgregarGasto input {
+  width: 39%;
+  max-width: 39%;
+  padding: 1.5%;
+  /* background-color: #6c22a6; */
+  background-color: #756ab6;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.botones_AgregarVehiculo > input {
+  margin-right: 25px;
+}
+
+.botones_AgregarGasto > input {
+  margin-right: 25px;
+}
+
+.botones_AgregarVehiculo a {
+  text-decoration: none;
+}
+
+.botones_AgregarGasto a {
+  text-decoration: none;
+}
+
+/* EVENTOS HOVER EN BOTONES */
+.botones_AgregarVehiculo input:hover {
+  transition: all 0.3s;
+  /* background-color: #756ab6; */
+  background-color: #6c22a6;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.botones_AgregarGasto input:hover {
+  transition: all 0.3s;
+  /* background-color: #756ab6; */
+  background-color: #6c22a6;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+/* RESPONSIVIDAD (AL MINIMIZAR) */
+
+@media (max-width: 650px) {
+  .agregar_camion,
+  .editar_camion {
+    width: 300px;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .gasto_view {
+    width: 300px;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .botones_AgregarVehiculo,
+  .botones_AgregarGasto {
+    text-align: center;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .botones_AgregarGasto input {
+    margin: auto;
+  }
+
+  .botones_AgregarVehiculo input {
+    display: block;
+    width: 70%;
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media (width < 895px) {
+  .agregar_camion,
+  .editar_camion,
+  .gasto_view {
+    width: 300px;
+    margin: auto;
+  }
+
+  .editar_camion {
+    height: 45%;
+  }
+
+  .botones_AgregarVehiculo {
+    text-align: center;
+    width: 70%;
+    max-width: 70%;
+  }
+
+  .botones_AgregarGasto input {
+    display: block;
+    width: 50%;
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .botones_AgregarVehiculo input {
+    display: block;
+    width: 50%;
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+/* ELIMINAR CAMIONES CSS ***********************************************/
+.eliminar_camion {
+  background-color: white;
+  width: 570px;
+  height: 280px;
+  border-radius: 5px;
+  margin-top: 10%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.eliminar_camion p {
+  padding-top: 13%;
+  font-size: 23px;
+  text-align: justify;
+  text-align: center;
+  font-weight: 650;
+}
+
+.eliminar_camion form {
+  margin: auto;
+  text-align: center;
+  /* height: 12%; */
+  margin-top: 7%;
+  width: 70%;
+  max-width: 70%;
+  padding-bottom: 5%;
+}
+
+.eliminar_camion form input {
+  /* margin-right: 28px; */
+  background-color: #756ab6;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 1);
+  padding: 1.5%;
+  width: 39%;
+  max-width: 39%;
+  font-size: 17px;
+}
+
+.eliminar_camion form input:hover {
+  transition: all 0.3s;
+  /* background-color: #756ab6; */
+  background-color: #6c22a6;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.eliminar_camion form a {
+  text-decoration: none;
+}
+
+.centrar {
+  justify-content: space-evenly;
+}
+
+@media (min-width: 650px) {
+  .centrar {
+    display: flex;
+  }
+
+  .eliminar_camion form a {
+    text-decoration: none;
+    width: 42%;
+    max-width: 42%;
+  }
+
+  #btn_cancelar1 {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 1.5%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .eliminar_camion {
+    width: 300px;
+    margin: auto;
+    /* transform: translateY(-50%); */
+  }
+
+  .eliminar_camion form {
+    height: auto;
+  }
+
+  .eliminar_camion form input {
+    display: block;
+    padding: 1.5%;
+    margin: auto;
+    width: 42%;
+    max-width: 42%;
+  }
+}
+
+/* AGREGAR VIAJE */
+#observaciones {
+  margin: 0;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 1.5%;
+  background-color: white;
+  width: 100%;
+  height: 5%;
+  resize: none;
+}
+
+/* VER INFORMACION VIAJES CSS *****************************************/
+
+#inf {
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  height: 20%;
+}
+
+#enlaceChofer {
+  float: right;
+  font-size: 14px;
+  padding: 0%;
+  color: black;
+}
+
+#enlaceChofer:hover {
+  color: #0c359e;
+  text-decoration: underline;
+}
+
+#infoChofer {
+  margin-bottom: 32px;
+}
+
+/* EDITAR VIAJE *******************************/
+#lista_add_gastos {
+  list-style: decimal;
+  margin: 0;
+  margin-left: 3%;
+}
+
+#lista_add_gastos li a {
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+}
+
+#lista_add_gastos li a:hover {
+  text-decoration: underline;
+  color: #1d24ca;
+}
+
+#link_add_gasto {
+  float: right;
+  color: black;
+}
+
+#link_add_gasto:hover {
+  color: #1d24ca;
+}
+
+/* ver info chofer */
+.ver_infochofer {
+  background-color: white;
+  width: 570px;
+  height: 490px;
+  border-radius: 5px;
+  margin-top: 10%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+/* VER GASTOS DEL VIAJE */
+.contenedor_tablaGastos {
+  /* height: 100%;
+  width: 50%; */
+  width: 570px;
+  height: auto;
+  /* max-width: 50%; */
+  background-color: white;
+  margin: auto;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+  margin-top: 2%;
+  padding-top: 1%;
+  margin-bottom: 3%;
+}
+
+#tabla_gastos {
+  text-align: center;
+  border-radius: 5px;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 0;
+  margin: auto;
+  margin-bottom: 10%;
+  background-color: white;
+  transform: translateY(5%);
+}
+
+#tabla_gastos td {
+  padding: 0px 7px 0px 7px;
+  max-width: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.encabezado_tgastos {
+  border: 2px solid #e1e1e3;
+  background-color: #e1e1e3;
+  height: 50px;
+}
+
+#tabla_gastos tbody tr {
+  border-right: 2px solid #e1e1e3;
+  border-left: 2px solid #e1e1e3;
+  border-bottom: 2px solid #e1e1e3;
+  height: 40px;
+}
+
+/* TABLA RESPONSIVA GASTOS*/
+@media (max-width: 650px) {
+  #tabla_gastos {
+    width: 80%;
+    margin: auto;
+  }
+
+  .encabezado_tgastos {
+    background-color: red;
+  }
+
+  #tabla_gastos th {
+    display: none;
+  }
+
+  #tabla_gastos tr {
+    margin: auto;
+  }
+
+  #tabla_gastos td {
+    display: block;
+    margin: auto;
+  }
+
+  #tabla_gastos .dato::before {
+    content: attr(data-cell) ": ";
+    font-weight: bold;
+  }
+  .contenedor_botones {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* INPUT AGREGAR GASTO */
+
+.gasto_view {
+  height: 20%;
+  min-height: 350px;
+  width: 40%;
+  min-width: 300px;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+/* VER GASTO VIEW */
+#infGasto {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #6c22a6;
+  border-radius: 3px;
+  height: 20%;
+  font-size: 17px;
+  padding: 1%;
+  text-align: center;
+  background-color: white;
+}
+
+.botones_VerGasto {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones_VerGasto a {
+  text-decoration: none;
+  margin: auto;
+  width: 30%;
+  margin-top: 4%;
+  /* height: 33px; */
+  height: 40px;
+}
+
+.botones_VerGasto input {
+  width: 100%;
+  margin: 0%;
+  height: 100%;
+  background-color: #756ab6;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.botones_VerGasto input:hover {
+  transition: all 0.3s;
+  background-color: #6c22a6;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+@media (width < 650px) {
+  .botones_VerGasto {
+    display: block;
+  }
+
+  .botones_VerGasto input {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+}
+
+/* .tabla_empleados {
+  width: 70%;
+  max-width: 70%;
+  background-color: red;
+} */
+
+.add_empleado1 {
+  height: 75%;
+  max-height: 500px;
+  min-height: 500px;
+}

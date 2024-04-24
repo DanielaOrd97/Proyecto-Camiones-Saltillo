@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Layout1.css" />
+    <title>Layout Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="LOGO.jpeg" id="logo" />
+        <nav>
+          <ul class="lista">
+            <li><a href="#">EMPLEADOS</a></li>
+            <li><a href="#">UNIDADES</a></li>
+            <li><a href="#">VIAJES</a></li>
+            <li><a href="#">GASTOS SEMANALES</a></li>
+          </ul>
+        </nav>
+        <div id="opciones_user">
+          <a href="#" id="btn_Options"
+            ><i class="fa-solid fa-user" id="icono"></i
+          ></a>
+        </div>
+      </div>
+      <!-- MENU DESPLEGABLE -->
+      <nav id="Menu_desp">
+        <ul>
+          <li><i class="fas fa-power-off"></i><a href="">Cerrar sesión</a></li>
+          <li><i class="fas fa-lock"></i><a href="">Cambiar contraseña</a></li>
+        </ul>
+      </nav>
+      <script>
+        let menuD = document.getElementById("Menu_desp");
+        let btnMostrar = document.getElementById("btn_Options");
+        let menuIcono = document.getElementById("icono");
+
+        btnMostrar.addEventListener("click", Mostrar);
+
+        function Mostrar() {
+          if (menuD.style.visibility == "visible") {
+            menuD.style.visibility = "hidden";
+          } else {
+            menuD.style.visibility = "visible";
+          }
+        }
+
+        document.addEventListener("click", function (e) {
+          if (e.target != menuIcono) {
+            menuD.style.visibility = "hidden";
+          }
+        });
+      </script>
+    </header>
+  </body>
+</html>

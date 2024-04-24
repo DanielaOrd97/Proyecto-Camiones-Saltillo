@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="ESTILOS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="LogInBody">
+    <form class="form">
+      <img src="LOGO.jpeg" id="logoInicio" />
+      <h1>Iniciar sesión</h1>
+
+      <div class="contenedor">
+        <div class="grupo">
+          <label>Correo electrónico</label>
+          <input type="text" />
+        </div>
+
+        <div class="grupo">
+          <label>Contraseña</label>
+          <input type="password" />
+          <label id="mensaje">El usuario introducido no existe.</label>
+        </div>
+      </div>
+
+      <input type="submit" value="Continuar" id="btn-aceptar" />
+
+      <a href="#">Restablecer contraseña</a>
+    </form>
+  </body>
+</html>
